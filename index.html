@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    
+    <nav>
+      <div>Acme Layout</div>
+      <div>Users</div>
+      <div>Departments</div>
+      <div>Contact</div>
+    </nav>
+    <div>
+      <h1>Users</h1>
+      <div class="create-user">
+        <div class="left">Create A User</div>
+        <div>
+          <label class="left" for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" value="Jane"><br>
+          <label class="left" for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" value="Doe"><br>
+          <div class="center">
+            <input type="reset" value="Clear">
+            <input type="submit" value="Save">
+          </div>
+      </div>
+    </div>
   </body>
 </html>
