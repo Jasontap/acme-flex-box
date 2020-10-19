@@ -5,15 +5,25 @@
   </head>
   <body>
     <nav>
-      <div>Acme Layout</div>
-      <div>Users</div>
-      <div>Departments</div>
-      <div>Contact</div>
+      <ul class='nav'>
+        <li id="title">
+          Acme Layout
+        </li>
+        <li>
+          <a href='/'>Users</a>
+        </li>
+        <li>
+          <a href='/'>Departments</a>
+        </li>
+        <li>
+          <a href='/'>Contact</a>
+        </li>
+      </ul>
     </nav>
     <div>
-      <h1>Users</h1>
+      <h1 class='sub-title'>Users</h1>
       <div class="create-user">
-        <div class="left">Create A User</div>
+        <h1 class='sub-title'>Create A User</h1>
         <div>
           <label class="left" for="fname">First Name:</label>
           <input type="text" id="fname" name="fname" value="Jane"><br>
