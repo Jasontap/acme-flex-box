@@ -3,13 +3,13 @@
   display: flex;
   padding: 0 0 0 10px;
   margin: 0;
-  background-color: rgb(65, 131, 255);
+  background-color: dodgerblue;
   color: white;
   height: 70px;
   align-items: center;
 }
 
-#title {
+nav li:first-child {
   font-size: 35px;
 }
 
@@ -30,17 +30,45 @@ a:active {
   font-weight: bold;
 }
 
-.create-user {
-  display: flex;
-  border: 1px solid rgb(63, 63, 63);
-  width: 550px;
-  height: 200px;
-}
-
-.sub-title {
+h1 {
   color: gray;
 }
-.create-user div {
+
+body h1 {
+  margin: 1rem;
+}
+
+body > div {
+  border: 1px solid rgb(63, 63, 63);
+  margin: 0;
+  padding: 10px 10px 20px 10px;
   display: flex;
-  height: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+div h1 {
+  border: 1px solid;
+  margin: 0;
+  display: flex;
+}
+
+body > div div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+input[type='text'] {
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* box-sizing: border-box; */
+}
+
+input[type='reset'], input[type='submit'] {
+  display: flex;
+  flex-direction: row;
 }
