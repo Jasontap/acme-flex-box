@@ -7,7 +7,9 @@
     <nav>
       <ul class='nav'>
         <li>
-          Acme Layout
+          <div>
+            Acme Layout
+          </div>
         </li>
         <li>
           <a href='/'>Users</a>
@@ -22,14 +24,61 @@
     </nav>
     <h1>Users</h1>
     <div>
-      <h1>Create A User</h1>
-      <div>
-        <label class="left" for="fname">First Name
-        <input type="text" id="fname" name="fname" value="Jane"></label><br>
-        <label class="left" for="lname">Last Name
-        <input type="text" id="lname" name="lname" value="Doe"></label><br>
+      <div class="box">
+        <h1>Create A User</h1>
+        <div class="row">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" value="Jane"><br>
+        </div>
+        <div class="row">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" value="Doe"><br>
+        </div>
+        <div class="row">
+          <label for="department">Department</label>
+          <select id="department" name="department">
+            <option value="none">-- None --</option>
+            <option value="dairy">Dairy</option>
+            <option value="meat">Meat</option>
+            <option value="seafood">Seafood</option>
+            <option value="bakery">Bakery</option>
+          </select>
+        </div>
+        <div class="center">    
           <input type="reset" value="Clear">
           <input type="submit" value="Save">
+        </div>
+      </div>
+    </div>
+    <div class="card-display">
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user. Some Text for the user. Some Text for the user. Some Text for the user. Some Text for the user. Some Text for the user. </p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
+      <div class="cards">
+        <h4>User A</h4>
+        <p>Some Text for the user</p>
+      </div>
     </div>
   </body>
 </html>

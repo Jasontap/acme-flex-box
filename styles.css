@@ -14,7 +14,7 @@ nav li:first-child {
 }
 
 .nav li {
-  flex: 25%;
+  flex: calc(100% / 3 - 2rem);
 }
 
 a {
@@ -31,7 +31,7 @@ a:active {
 }
 
 h1 {
-  color: gray;
+  color:rgb(100, 100, 100);
 }
 
 body h1 {
@@ -39,37 +39,94 @@ body h1 {
 }
 
 body > div {
-  border: 1px solid rgb(63, 63, 63);
+  flex-basis: 50%;
   margin: 0;
-  padding: 10px 10px 20px 10px;
+  /* padding: 10px 10px 20px 10px; */
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
 }
 
-div h1 {
-  border: 1px solid;
-  margin: 0;
-  display: flex;
-}
-
-body > div div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-input[type='text'] {
-  /* width: 100%; */
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: flex;
-  border: 1px solid #ccc;
+.box {
+  width: 550px;
+  border: 1px solid black;
+  padding: 18px;
   border-radius: 4px;
-  /* box-sizing: border-box; */
 }
 
-input[type='reset'], input[type='submit'] {
+.box h1 {
+  margin: 0;
+}
+
+.row {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.row label {
+  width: 140px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+}
+
+/* .row input, select {
+  background-color: red;
+} */
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='text'], select[id='department'] {
+  flex: 30%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+
+select[id='department']{
+  background-color: rgb(243, 243, 243);
+  border-color: grey;
+}
+
+input[type='submit'] {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* input[type='reset'], input[type='submit'] {
+  justify-content: flex-end;
+} */
+
+.card-display {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% / 3 - 2rem);
+  /* justify-content: flex-start; */
+  border: 1px solid gray;
+  padding-top: 8px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: rgb(100, 100, 100);
+  /* padding: 5px; */
+}
+
+.cards h4, p {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: verdana;
+}
